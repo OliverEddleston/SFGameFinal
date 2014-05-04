@@ -1,0 +1,38 @@
+# Oliver Eddleston's Game #
+
+This is an example C++ application using the SDL library.
+It tries to be as nicely C++11 as possible but do keep in
+mind that SDL is written in C and, at some stage, you have
+
+## Story ##
+There is an invasion of square shaped aliens approacing earth.
+The country is in a state of panic and doesnt know what to do.
+They fear that the human race as they know it will end, untill...
+Mr Triangle, also known as Mr. Tea, offers his services to the planet. 
+Mr Tea is an ex special forces officer from the UK, and may be the
+worlds only hope.
+Battle your way through the wave of enemies, collecting any valuables
+as you do.
+Will you be able to save the world...?
+
+
+## Installation of The Game ##
+You will have to have the SDL development libraries installed on
+your system.  The easiest way to compile is to use a command-line
+
+`$ g++ -c src/Main.cpp`
+`$ g++ -o starship src/Main.o -lSDL -lSDL_image`
+
+which will produce an executable file called "starship" in the
+top-level directory.  To execute this file do the following
+
+`$ ./starship`
+ 
+from the top-level directory.  The game will expect to find the
+`assets` directory under its current working directory.
+
+## Credits ##
+The sprites in this game were created by me using GIMP.
+
+The event system is based on [Libsigc++](http://libsigc.sourceforge.net/)
+and is used under the [LGPL](http://www.gnu.org/copyleft/lgpl.html).
